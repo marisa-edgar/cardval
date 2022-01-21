@@ -1,3 +1,5 @@
+//tests wether the element in the array is odd
+
 function isOdd(num){
   if (num % 2 ===1){
     return true;
@@ -5,6 +7,8 @@ function isOdd(num){
     return false;
   }  
 }
+
+// if element is odd double it and move elements to the modified array
 
 function validator(numbers) {
   let numArr = numbers.split("")
@@ -16,6 +20,9 @@ function validator(numbers) {
       else
           modified.push(parseInt(numArr[i] * 2));
   }
+
+//takes element in modified array and if its length is greater than one add both and push the sum to the array
+
   console.log(modified + "modified")
   let modifiedArr = []
   modified.forEach(function(element){
@@ -26,6 +33,8 @@ function validator(numbers) {
     modifiedArr.push(element)
     }
   });
+
+// total sum  of all the elements in the array pushed to sumString and if it is divisible by 10 return true
   let sumOfArray = 0
   modifiedArr.forEach(function(element){
     sumOfArray += element;
@@ -40,6 +49,8 @@ function validator(numbers) {
   }
 }
 
+
+//uses a function to validate the card length + the first number or first and second number to identify the card type
 //let aa2 = "370000000000000" 
 //typeOfCard(aa2)
 
